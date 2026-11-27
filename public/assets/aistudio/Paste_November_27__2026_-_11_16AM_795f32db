@@ -1,0 +1,1060 @@
+# LANGUAGE MENTOR 2.0 — PHASE C: PREMIUM DYNAMIC LEARNING PLATFORM
+
+Act as a senior full-stack engineer, AI product architect, UI/UX designer, database architect, interactive coding platform engineer, and educational technology specialist.
+
+I already have an existing working project called **Language Mentor**.
+
+Phase A introduced AI Teaching Intelligence.
+
+Phase B introduced Adaptive Assessment, Concept Mastery, Learning Gap Detection, and Misconception Intelligence.
+
+Phase C was initially planned for Personalized Learning Paths, Smart Study Planner, and Spaced Revision.
+
+Now I want to upgrade Phase C into a complete, dynamic, premium-level educational platform.
+
+My current application feels too static. I want real functionality, database integration, authentication, a dramatically better interactive teaching experience, and an integrated programming playground where students can write and run code while learning.
+
+This is NOT a new project.
+
+Modify and upgrade my existing Language Mentor application.
+
+---
+
+# 1. FIRST, INSPECT MY EXISTING APPLICATION
+
+Before modifying anything:
+
+- Inspect the entire existing project.
+- Understand the frontend, backend, architecture, routes, state management, AI integration, database integration and authentication.
+- Identify all existing Language Mentor features.
+- Inspect the Phase A implementation.
+- Inspect the Phase B implementation.
+- Identify the existing UI components, design system and navigation.
+- Inspect whether Supabase is already configured and connected.
+- Inspect the existing database schema.
+- Inspect how Gemini is currently integrated.
+- Identify existing APIs, services, authentication, user profiles and learning data.
+- Identify whether the current application supports code generation or programming lessons.
+
+Do not assume Supabase is already connected.
+
+If Supabase is already configured, use the existing connection and infrastructure.
+
+If Supabase is not configured, implement a proper integration using the existing environment and guide me only through the necessary setup steps.
+
+Do not create duplicate databases, services, authentication systems, tables or APIs.
+
+Do not replace my working project with a new project.
+
+---
+
+# 2. TRANSFORM THE EXISTING APPLICATION INTO A DYNAMIC WEBSITE
+
+My existing website currently feels static.
+
+I want the application to feel like a real, responsive, intelligent learning platform.
+
+Improve the actual application experience:
+
+- Dynamic data instead of hardcoded demonstration data.
+- Persistent user-specific learning information.
+- Real authentication.
+- Personalized content.
+- Interactive learning.
+- Dynamic learning recommendations.
+- Functional learning progress.
+- Functional learning paths.
+- Interactive assessments.
+- Interactive code playground.
+- Real database-backed history.
+- Functional buttons and actions.
+- Meaningful loading states.
+- Skeleton loading where appropriate.
+- Empty states.
+- Error handling.
+- Responsive interactions.
+- Smooth page transitions.
+- Interactive micro-animations.
+- Real-time or refreshed data where appropriate.
+- Personalized learner dashboard.
+- Functional navigation.
+- Dynamic content rendering.
+
+Do not make buttons decorative.
+
+Every feature presented in the UI must have a meaningful action.
+
+Do not use fake progress, fake quiz scores, fake activity, fake user records or fabricated analytics.
+
+If real data is unavailable, show a meaningful empty state or onboarding experience.
+
+---
+
+# 3. CREATE A PREMIUM, MODERN, PROFESSIONAL UI/UX
+
+The current website must evolve from a static interface into a polished, modern, premium-level EdTech platform.
+
+Improve the UI and UX substantially.
+
+Maintain the existing Language Mentor brand identity while upgrading the interface.
+
+The website should feel like a modern product built by a professional startup, not a basic student project.
+
+### Design direction
+
+Use:
+
+- Modern premium SaaS design.
+- Minimal and clean layouts.
+- Elegant typography.
+- Sophisticated spacing.
+- Premium cards.
+- Subtle depth.
+- Carefully designed interactive states.
+- Smooth transitions.
+- Responsive layouts.
+- Modern dashboard patterns.
+- Intelligent visual hierarchy.
+- Premium dark/light theme support if compatible with the existing architecture.
+- Subtle motion rather than excessive animations.
+- Modern learning interface design.
+- Beautiful content presentation.
+- Professional navigation.
+- Consistent design system.
+
+Avoid:
+
+- Old-fashioned designs.
+- Generic AI-generated dashboard layouts.
+- Excessive gradients.
+- Excessive glowing effects.
+- Too many unnecessary cards.
+- Cluttered layouts.
+- Excessive animations.
+- Oversized unnecessary elements.
+- Repeated UI components.
+- Generic placeholder content.
+- Blue being used as the dominant accent color if it conflicts with my existing design preference.
+
+Use a refined palette with an elegant primary accent, neutral surfaces and carefully selected contrast.
+
+The UI must be premium, accessible, responsive and usable on mobile, tablet and desktop.
+
+Do not redesign blindly. Inspect the current interface and intelligently upgrade it.
+
+---
+
+# 4. IMPLEMENT REAL USER AUTHENTICATION
+
+Create a complete authentication system integrated into the application.
+
+If Supabase is available or configured, use Supabase Authentication.
+
+If authentication already exists, improve and extend it instead of replacing it.
+
+Implement:
+
+- Sign up.
+- Sign in.
+- Sign out.
+- Email verification where supported.
+- Password recovery.
+- Password reset.
+- Authentication state persistence.
+- Protected routes.
+- User profile.
+- User-specific data.
+- Session management.
+- Secure authentication state handling.
+- Authenticated dashboard.
+- Guest onboarding where appropriate.
+
+### User profile
+
+Support user-specific information where appropriate:
+
+- Display name.
+- Email.
+- Learning preferences.
+- Preferred language.
+- Preferred explanation style.
+- Skill level.
+- Subjects of interest.
+- Learning goals.
+- Daily study duration.
+- Profile settings.
+
+Do not require unnecessary personal information.
+
+### Security
+
+- Never expose secret API keys.
+- Never place service-role keys in the frontend.
+- Secure user-specific data.
+- Validate authentication on the backend.
+- Apply Row Level Security when using Supabase.
+- Prevent users from accessing other users' learning records.
+- Protect sensitive operations.
+- Handle session expiration properly.
+
+Authentication must work, not just display login forms.
+
+---
+
+# 5. DATABASE INTEGRATION — REAL PERSISTENT LEARNING SYSTEM
+
+If Supabase is available, integrate it properly.
+
+Inspect the current schema first.
+
+Create incremental migrations only where needed.
+
+Do not duplicate existing tables.
+
+Do not reset the database.
+
+Do not delete existing user data.
+
+Create or extend the appropriate structures for:
+
+- User profiles.
+- Learning preferences.
+- Learning goals.
+- Learning paths.
+- Learning modules.
+- Learning concepts.
+- Learning sessions.
+- Assessment attempts.
+- Student answers.
+- Concept mastery.
+- Learning gaps.
+- Misconceptions.
+- Revision schedules.
+- Study activities.
+- Programming lessons.
+- Code practice records.
+- Code submission history.
+- Learning progress.
+
+These are potential structures, not mandatory table names. Reuse the existing schema wherever possible.
+
+### Database requirements
+
+- Real persistent storage.
+- User-specific records.
+- Appropriate relationships.
+- Appropriate indexes.
+- Secure policies.
+- Validation.
+- Reliable data retrieval.
+- Reliable data updates.
+- Avoid duplicate records.
+- Handle database failures.
+- Maintain data integrity.
+
+If Supabase is not connected, do not claim database functionality is live.
+
+Implement the integration progressively and provide the required setup instructions.
+
+---
+
+# 6. COMPLETELY IMPROVE THE AI EXPLANATION EXPERIENCE
+
+The current explanation area is too basic and static.
+
+I want the AI teaching experience to become the most impressive and useful part of Language Mentor.
+
+Do not simply generate long blocks of text.
+
+Build a rich, interactive, structured teaching experience.
+
+The AI should teach concepts in a way that makes difficult technical topics easy to understand.
+
+The teaching approach should be:
+
+**Understand → Visualize → Relate → Explore → Apply → Practice → Verify Understanding.**
+
+### When a learner asks a question, intelligently determine:
+
+- What concept the learner is asking about.
+- The learner's existing level.
+- The complexity of the question.
+- Whether the learner needs foundational explanation.
+- Whether the learner needs a practical example.
+- Whether the learner needs an analogy.
+- Whether the learner needs a code example.
+- Whether the learner needs a visual explanation.
+- Whether the learner needs exam preparation.
+- Whether the learner needs a step-by-step solution.
+
+Do not force every explanation into the same rigid format.
+
+Adapt the teaching experience to the question.
+
+---
+
+# 7. CREATE A MULTI-MODE EXPLANATION EXPERIENCE
+
+Provide intelligent explanation modes.
+
+Reuse existing teaching modes if already implemented.
+
+Support modes such as:
+
+### A. Explain Like I'm a Beginner
+
+Explain a difficult concept using simple vocabulary, everyday examples and step-by-step progression.
+
+Avoid unnecessary jargon.
+
+### B. Real-World Analogy
+
+Connect technical concepts to familiar real-life situations.
+
+Examples:
+
+- Database concepts using library systems.
+- APIs using restaurant communication.
+- Networking using postal delivery.
+- Operating systems using office management.
+- Machine learning using pattern recognition in everyday experiences.
+- Data structures using familiar objects.
+
+Analogies must genuinely help explain the concept.
+
+Do not use meaningless analogies.
+
+### C. Visual Learning
+
+When appropriate, generate structured visual explanations using supported components, diagrams or interactive illustrations.
+
+Examples:
+
+- Process flow.
+- Architecture diagrams.
+- Sequence diagrams.
+- Concept relationships.
+- Memory diagrams.
+- Data flow.
+- Algorithm flow.
+
+Use diagrams where they genuinely improve understanding.
+
+### D. Step-by-Step Learning
+
+Explain concepts progressively.
+
+Let the learner understand one stage before moving into the next when appropriate.
+
+### E. Practical Learning
+
+Explain how a concept works in a real application.
+
+Include practical examples, use cases and implementation scenarios.
+
+### F. Exam Mode
+
+Provide:
+
+- Definition.
+- Explanation.
+- Important points.
+- Example.
+- Diagram where appropriate.
+- Exam-ready answer.
+- Common mistakes.
+
+### G. Code Teaching Mode
+
+For programming topics, provide:
+
+- Concept explanation.
+- Syntax.
+- Example code.
+- Code walkthrough.
+- Expected output.
+- Interactive execution.
+- Practice challenge.
+- Common errors.
+
+### H. Regional Language Teaching
+
+Support:
+
+- English.
+- Tamil.
+- Tanglish.
+- Standard Tamil.
+- Formal Tamil.
+- Appropriate regional conversational styles where supported.
+
+Maintain technical accuracy.
+
+Do not overuse slang.
+
+Do not stereotype regional language styles.
+
+Allow users to change explanation mode dynamically.
+
+---
+
+# 8. CREATE A PREMIUM INTERACTIVE EXPLANATION AREA
+
+Improve the actual explanation presentation.
+
+Instead of displaying everything as a single text block, use a well-designed learning experience.
+
+When appropriate, organize explanations into interactive sections such as:
+
+- Concept Overview.
+- Why It Matters.
+- Visual Understanding.
+- Real-World Analogy.
+- How It Works.
+- Practical Example.
+- Interactive Demonstration.
+- Code Example.
+- Common Mistakes.
+- Key Takeaways.
+- Test Your Understanding.
+
+These sections should be adaptive.
+
+Do not display unnecessary sections when they do not add value.
+
+The explanation area should:
+
+- Support readable formatting.
+- Support syntax highlighting.
+- Render code blocks correctly.
+- Support diagrams.
+- Support structured content.
+- Allow users to copy code.
+- Allow users to switch explanation modes.
+- Allow users to ask follow-up questions.
+- Allow users to regenerate or simplify explanations.
+- Allow users to continue learning from a concept.
+- Allow users to save useful lessons if the existing application supports persistence.
+
+Make the learning content visually attractive, readable and interactive.
+
+---
+
+# 9. CREATE A PROGRAMMING PLAYGROUND — WRITE, RUN AND LEARN
+
+This is one of the most important features of Phase C.
+
+I want students to be able to learn programming directly inside Language Mentor.
+
+Create an integrated interactive coding playground.
+
+The student should be able to:
+
+1. Learn a programming concept.
+2. See an example program.
+3. Understand the program.
+4. Edit the program.
+5. Run the program.
+6. See the actual output.
+7. Identify errors.
+8. Ask AI to explain the error.
+9. Modify the code.
+10. Practice a challenge.
+
+### Playground interface
+
+Create a modern, professional, integrated coding environment.
+
+Include:
+
+- Code editor.
+- Syntax highlighting.
+- Language selector.
+- Run button.
+- Reset button.
+- Copy button.
+- Output console.
+- Error output.
+- Execution status.
+- Loading state.
+- Example program.
+- Code explanation.
+- Practice challenge.
+- Optional input panel.
+- Clear output.
+- AI help.
+
+Use a suitable existing code editor or library if already installed.
+
+If an editor library is not present, inspect compatibility and choose an appropriate solution without unnecessarily increasing the application's bundle size.
+
+### Supported programming languages
+
+Prioritize:
+
+- Java.
+- Python.
+- JavaScript.
+- C.
+- C++.
+
+Add other languages only if reliable execution infrastructure supports them.
+
+### Code execution architecture
+
+Code execution must actually work.
+
+Do not implement a fake Run button.
+
+Inspect the current backend and available execution infrastructure.
+
+Use a secure code execution service or isolated sandbox architecture where supported.
+
+For example, use an existing compatible code execution API or a properly isolated backend runner.
+
+Do not execute arbitrary user-submitted code directly on the application server.
+
+Do not use unrestricted eval for general-purpose code execution.
+
+For JavaScript, if appropriate, use a carefully isolated execution environment with strict limitations.
+
+For Python, Java, C and C++, use a secure execution service or sandbox with:
+
+- Execution timeout.
+- Memory limits where supported.
+- Input restrictions.
+- Output limits.
+- Isolation.
+- Error handling.
+- Rate limiting.
+- Request validation.
+
+If an external code execution API requires an API key, keep the key server-side.
+
+Never expose secret execution API credentials in frontend code.
+
+Do not assume a particular external service is already connected.
+
+Inspect existing configuration first.
+
+If full execution infrastructure cannot be configured automatically, build the editor and integration architecture properly, identify the exact required configuration and do not pretend execution is working.
+
+### Code execution functionality
+
+The Run button should:
+
+- Validate the code submission.
+- Send it to the appropriate execution engine.
+- Execute the code securely.
+- Display actual output.
+- Display actual errors.
+- Handle execution timeout.
+- Handle API failures.
+- Handle invalid language.
+- Handle empty code.
+- Prevent duplicate execution.
+- Display execution status.
+- Clear or update output appropriately.
+
+---
+
+# 10. CONNECT THE PROGRAMMING PLAYGROUND TO AI TEACHING
+
+The coding playground must be integrated with the AI learning system.
+
+When a student learns a programming topic, automatically provide a relevant example where appropriate.
+
+Example:
+
+Topic: Java Arrays.
+
+Teaching experience:
+
+1. Explain arrays in simple language.
+2. Show a real-world analogy.
+3. Explain array syntax.
+4. Display a Java example.
+5. Allow the student to edit it.
+6. Run the code.
+7. Show the actual output.
+8. Explain the code line by line.
+9. Provide a practice challenge.
+10. Evaluate the student's understanding.
+
+### AI coding assistance
+
+Allow students to ask:
+
+- Explain this code.
+- Explain line by line.
+- Why is this error happening?
+- Fix my code.
+- Give me a hint.
+- Simplify this program.
+- Give me a different example.
+- What happens if I change this variable?
+- Explain the output.
+- Create a practice problem.
+
+### AI error explanation
+
+When a program fails:
+
+- Display the real execution error.
+- Allow the student to ask AI to explain the error.
+- Explain the error in simple language.
+- Identify the relevant code location where possible.
+- Provide a debugging hint.
+- Avoid automatically replacing the student's entire code unless requested.
+- Encourage learning instead of simply giving the answer.
+
+### Learning-first assistance
+
+For practice challenges, support:
+
+- Hint.
+- Concept reminder.
+- Step-by-step guidance.
+- Solution reveal when requested.
+
+Do not immediately reveal the answer when the learner requests a hint.
+
+---
+
+# 11. PROGRAMMING LESSON SYSTEM
+
+Create or extend a programming lesson structure.
+
+A lesson may include:
+
+- Topic.
+- Programming language.
+- Learning objective.
+- Difficulty.
+- Explanation.
+- Example program.
+- Expected output.
+- Interactive playground.
+- Practice challenge.
+- Hint.
+- Test cases where supported.
+- Assessment.
+- Completion criteria.
+
+Support beginner programming journeys such as:
+
+Java:
+
+- Variables.
+- Data types.
+- Operators.
+- Conditions.
+- Loops.
+- Arrays.
+- Strings.
+- Methods.
+- OOP.
+- Collections.
+- Basic algorithms.
+- Problem-solving.
+
+Python:
+
+- Variables.
+- Data types.
+- Conditions.
+- Loops.
+- Lists.
+- Functions.
+- Dictionaries.
+- OOP.
+- Basic algorithms.
+
+The lesson system should be adaptable and not restricted to these topics.
+
+Allow AI to create lessons based on student goals when appropriate.
+
+Persist lesson progress if the database is connected.
+
+---
+
+# 12. PERSONALIZED LEARNING PATH
+
+Continue Phase C's original learning path functionality.
+
+Use actual data from Phase A and Phase B.
+
+Generate personalized paths based on:
+
+- Current mastery.
+- Learning gaps.
+- Misconceptions.
+- Prerequisites.
+- Student goals.
+- Available study time.
+- Assessment performance.
+- Retention evidence.
+
+Create adaptive learning progression.
+
+Do not generate generic static topic lists.
+
+Learning path progression should update when new evidence is recorded.
+
+---
+
+# 13. SMART STUDY PLANNER
+
+Implement a dynamic study planner.
+
+Generate realistic daily and weekly plans based on:
+
+- Learning goals.
+- Available time.
+- Deadlines.
+- Weak concepts.
+- Learning path.
+- Revision schedule.
+- Programming practice.
+- Assessments.
+
+Support:
+
+- Daily tasks.
+- Weekly plans.
+- Completed sessions.
+- Incomplete sessions.
+- Rescheduling.
+- Study activity history.
+
+Do not create unrealistic schedules.
+
+Do not treat missed sessions as failure.
+
+---
+
+# 14. SPACED REVISION AND RETENTION
+
+Implement adaptive revision.
+
+Use actual learning evidence.
+
+Support:
+
+- Revision schedule.
+- Concept review.
+- Retention assessment.
+- Revision history.
+- Adaptive revision intervals.
+- Retention risk.
+- Learning gap correction.
+
+Do not mark concepts as retained without evidence.
+
+Reuse Phase B mastery and assessment systems.
+
+---
+
+# 15. PERSONALIZED DASHBOARD
+
+Improve the existing authenticated learner experience.
+
+Do not create a duplicate dashboard if one already exists.
+
+The dashboard should dynamically display appropriate information from actual data:
+
+- Greeting.
+- Current learning goals.
+- Continue learning.
+- Learning path.
+- Today's study plan.
+- Upcoming revision.
+- Weak concepts.
+- Recently studied concepts.
+- Programming progress.
+- Assessment progress.
+- Learning recommendations.
+- Relevant achievements if supported.
+- Progress summaries.
+
+Do not show fake data.
+
+If a user is new, create an attractive onboarding and empty-state experience.
+
+The dashboard should adapt as the learner uses the application.
+
+---
+
+# 16. LEARNING ONBOARDING
+
+Create a practical onboarding flow for new users if the current application does not already have one.
+
+Collect only useful learning preferences:
+
+- Learning goals.
+- Subjects.
+- Preferred explanation language.
+- Learning style or teaching preference.
+- Current level.
+- Available study time.
+- Optional deadline.
+
+Use this information to initialize a personalized learning experience.
+
+Do not make onboarding unnecessarily long.
+
+Allow users to modify their preferences later.
+
+---
+
+# 17. PERFORMANCE OPTIMIZATION
+
+Optimize the application for a smooth experience.
+
+Requirements:
+
+- Avoid duplicate AI calls.
+- Avoid duplicate database requests.
+- Avoid unnecessary rendering.
+- Use efficient data fetching.
+- Use caching where appropriate.
+- Use pagination where appropriate.
+- Avoid huge prompt payloads.
+- Manage conversation context efficiently.
+- Optimize code editor loading.
+- Avoid loading the playground unnecessarily if it affects startup.
+- Optimize mobile performance.
+- Handle network delays.
+- Use loading states.
+- Use error boundaries or equivalent protections where appropriate.
+- Avoid unnecessary AI calls for deterministic calculations.
+
+The website should not feel slow or unresponsive.
+
+---
+
+# 18. SECURITY
+
+Ensure:
+
+- Secure authentication.
+- User-specific database access.
+- Proper RLS if Supabase is connected.
+- Backend authorization.
+- Secure API keys.
+- Secure code execution.
+- Rate limiting where appropriate.
+- Input validation.
+- AI output validation.
+- Protection against duplicate requests.
+- Protection against unauthorized access.
+- No secret keys in frontend code.
+- No unrestricted arbitrary code execution on the application server.
+
+---
+
+# 19. PRESERVE AND UPGRADE EXISTING FUNCTIONALITY
+
+Preserve existing Phase A and Phase B features.
+
+Do not remove:
+
+- Existing AI Tutor.
+- Existing conversation history.
+- Existing teaching modes.
+- Existing assessment system.
+- Existing learning gap detection.
+- Existing misconception intelligence.
+- Existing mastery calculations.
+- Existing authentication if present.
+- Existing integrations.
+- Existing navigation.
+- Existing working functionality.
+
+Integrate the new features with the existing architecture.
+
+Do not create duplicate AI tutors.
+
+Do not create duplicate assessment systems.
+
+Do not create duplicate mastery systems.
+
+Do not replace existing working code unnecessarily.
+
+---
+
+# 20. TEST THE COMPLETE IMPLEMENTATION
+
+Actually verify the implementation.
+
+Test:
+
+### Authentication
+
+- Sign up.
+- Sign in.
+- Sign out.
+- Protected pages.
+- Authentication persistence.
+- User-specific access.
+- Password recovery where configured.
+
+### Database
+
+- User profile.
+- Data persistence.
+- Learning history.
+- Learning goals.
+- Learning path.
+- Study sessions.
+- Revision data.
+- Programming records.
+- Access control.
+
+### AI Teaching
+
+- Beginner explanations.
+- Technical explanations.
+- Analogies.
+- Tamil.
+- Tanglish.
+- Code explanations.
+- Follow-up questions.
+- Explanation mode switching.
+
+### Coding Playground
+
+- Editor.
+- Language selection.
+- Run.
+- Actual execution.
+- Output.
+- Errors.
+- Timeout.
+- Input.
+- Reset.
+- Copy.
+- AI debugging.
+- AI code explanation.
+- Duplicate execution prevention.
+
+### Adaptive Learning
+
+- Learning paths.
+- Assessments.
+- Mastery integration.
+- Learning gap integration.
+- Study planner.
+- Revision.
+- Retention adaptation.
+
+### UI/UX
+
+- Desktop.
+- Mobile.
+- Tablet.
+- Loading states.
+- Empty states.
+- Error states.
+- Responsive design.
+- Functional buttons.
+- Navigation.
+- Accessibility basics.
+
+Do not claim a test passed unless it was actually performed.
+
+---
+
+# 21. IMPLEMENTATION STRATEGY
+
+Implement progressively.
+
+STEP 1: Inspect the existing application.
+
+STEP 2: Identify existing functionality and architecture.
+
+STEP 3: Identify existing database and authentication.
+
+STEP 4: Plan the upgrade without replacing existing functionality.
+
+STEP 5: Implement authentication and database integration where required.
+
+STEP 6: Improve the UI and UX into a premium-level dynamic learning platform.
+
+STEP 7: Upgrade the explanation experience.
+
+STEP 8: Implement the interactive coding playground.
+
+STEP 9: Implement secure code execution integration.
+
+STEP 10: Integrate programming lessons with AI tutoring.
+
+STEP 11: Integrate personalized learning paths.
+
+STEP 12: Implement smart study planning.
+
+STEP 13: Implement spaced revision.
+
+STEP 14: Integrate Phase A and Phase B.
+
+STEP 15: Optimize performance.
+
+STEP 16: Test the complete application.
+
+STEP 17: Fix implementation issues.
+
+---
+
+# FINAL EXPECTATION
+
+I want Language Mentor to feel like a real premium AI education product.
+
+Not a static chatbot.
+
+Not a simple dashboard.
+
+Not a mockup.
+
+Not a collection of disconnected AI features.
+
+I want a connected learning platform where a student can:
+
+- Create an account.
+- Personalize their learning.
+- Ask AI questions.
+- Receive easy-to-understand explanations.
+- Learn using real-world analogies.
+- Explore interactive diagrams.
+- Learn programming.
+- Write programs.
+- Run programs.
+- See actual output.
+- Debug programs.
+- Practice programming challenges.
+- Complete assessments.
+- Track their mastery.
+- Identify learning gaps.
+- Receive personalized learning paths.
+- Follow study plans.
+- Revise intelligently.
+- Track progress over time.
+
+The learning experience should follow:
+
+UNDERSTAND → VISUALIZE → RELATE → EXPLORE → CODE → PRACTICE → ASSESS → ADAPT → RETAIN.
+
+Make Language Mentor feel modern, premium, intelligent, interactive, technically reliable and genuinely useful.
+
+Work directly on my existing project.
+
+Inspect before modifying.
+
+Preserve existing functionality.
+
+Do not fabricate features or test results.
+
+Implement the features progressively and verify them.
+
+If configuration is required, identify the exact requirements instead of pretending it is completed.
+
+Begin by inspecting my existing application and then implement this Phase C upgrade.

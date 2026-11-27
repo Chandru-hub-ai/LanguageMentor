@@ -1,0 +1,11 @@
+{
+  "name": "Language Mentor",
+  "description": "Culturally intelligent multilingual AI tutor, adaptive mastery engine, interactive programming playground, and personalized study platform.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

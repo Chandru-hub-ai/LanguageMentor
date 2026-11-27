@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Mentor</title>
+    <meta name="description" content="Culturally intelligent multilingual AI tutor, adaptive mastery engine, interactive programming playground, and personalized study platform.">
+    <meta property="og:title" content="Language Mentor">
+    <meta property="og:description" content="Culturally intelligent multilingual AI tutor, adaptive mastery engine, interactive programming playground, and personalized study platform.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&family=Hind+Madurai:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap');
+
+        :root, [data-theme="dark"] {
+            --bg-canvas: #000000;
+            --bg-surface: rgba(12, 12, 14, 0.86);
+            --bg-surface-elevated: rgba(24, 24, 28, 0.92);
+            --bg-inset: rgba(255, 255, 255, 0.035);
+            --border-subtle: rgba(255, 255, 255, 0.14);
+            --border-strong: rgba(255, 255, 255, 0.28);
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.76);
+            --text-muted: rgba(255, 255, 255, 0.48);
+            --accent-primary: #39FF14;
+            --accent-secondary: #39FF14;
+            --accent-contrast: #000000;
+            --accent-soft: rgba(57, 255, 20, 0.11);
+            --accent-border: rgba(57, 255, 20, 0.34);
+            --btn-primary-bg: #ffffff;
+            --btn-primary-text: #000000;
+            --btn-primary-hover-bg: #39FF14;
+            --btn-primary-hover-text: #000000;
+            --header-bg: rgba(0, 0, 0, 0.84);
+            --option-bg: #0b0b0e;
+        }
+
+        [data-theme="light"] {
+            --bg-canvas: #f8fafc;
+            --bg-surface: rgba(255, 255, 255, 0.95);
+            --bg-surface-elevated: #f1f5f9;
+            --bg-inset: #f1f5f9;
+            --border-subtle: rgba(9, 9, 11, 0.12);
+            --border-strong: rgba(9, 9, 11, 0.26);
+            --text-primary: #09090b;
+            --text-secondary: #3f3f46;
+            --text-muted: #71717a;
+            --accent-primary: #15803d;
+            --accent-secondary: #15803d;
+            --accent-contrast: #ffffff;
+            --accent-soft: rgba(21, 128, 61, 0.10);
+            --accent-border: rgba(21, 128, 61, 0.30);
+            --btn-primary-bg: #09090b;
+            --btn-primary-text: #ffffff;
+            --btn-primary-hover-bg: #15803d;
+            --btn-primary-hover-text: #ffffff;
+            --header-bg: rgba(248, 250, 252, 0.92);
+            --option-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'General Sans', 'Outfit', 'Hind Madurai', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-canvas);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            transition: background-color 0.25s ease, color 0.25s ease;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, .font-display {
+            font-family: 'General Sans', 'Outfit', 'Hind Madurai', sans-serif;
+        }
+
+        .font-editorial {
+            font-family: 'Playfair Display', 'Hind Madurai', Georgia, serif;
+        }
+
+        .font-ui {
+            font-family: 'Outfit', 'General Sans', sans-serif;
+        }
+
+        code, pre, .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .tamil-text {
+            font-family: 'Hind Madurai', 'General Sans', sans-serif;
+        }
+
+        .lm-surface {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .lm-surface-elevated {
+            background-color: var(--bg-surface-elevated);
+            border: 1px solid var(--border-subtle);
+        }
+
+        .lm-inset {
+            background-color: var(--bg-inset);
+            border: 1px solid var(--border-subtle);
+        }
+
+        .glass-card {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            backdrop-filter: blur(12px);
+        }
+
+        .mentor-gradient {
+            background: linear-gradient(90deg, var(--accent-primary) 0%, var(--text-primary) 100%);
+        }
+
+        .lm-accent-text {
+            color: var(--accent-primary);
+        }
+
+        .lm-accent-soft {
+            background-color: var(--accent-soft);
+            border: 1px solid var(--accent-border);
+            color: var(--accent-primary);
+        }
+
+        .lm-btn-primary {
+            background-color: var(--btn-primary-bg);
+            color: var(--btn-primary-text);
+            border: 1px solid transparent;
+            transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .lm-btn-primary:hover:not(:disabled) {
+            background-color: var(--btn-primary-hover-bg);
+            color: var(--btn-primary-hover-text);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px var(--accent-soft);
+        }
+
+        .lm-btn-outline {
+            background-color: var(--bg-inset);
+            color: var(--text-primary);
+            border: 1px solid var(--border-subtle);
+            transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+        }
+
+        .lm-btn-outline:hover:not(:disabled) {
+            border-color: var(--accent-border);
+            background-color: var(--bg-surface-elevated);
+        }
+
+        .lm-tab-active {
+            background-color: var(--btn-primary-bg);
+            color: var(--btn-primary-text);
+            border-color: var(--btn-primary-bg);
+        }
+
+        .lm-input:focus {
+            border-color: var(--accent-primary) !important;
+        }
+
+        .lm-option {
+            background-color: var(--option-bg);
+            color: var(--text-primary);
+        }
+
+        .lm-neon-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 999px;
+            background-color: var(--accent-primary);
+            box-shadow: 0 0 8px var(--accent-primary);
+            animation: lmPulse 2.4s infinite ease-in-out;
+        }
+
+        @keyframes lmPulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(0.82); }
+        }
+
+        @keyframes lmWordReveal {
+            from {
+                transform: translateY(105%);
+                filter: blur(8px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0%);
+                filter: blur(0px);
+                opacity: 1;
+            }
+        }
+
+        .word-reveal-mask {
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: bottom;
+        }
+
+        .word-reveal-inner {
+            display: inline-block;
+            animation: lmWordReveal 0.85s cubic-bezier(0.05, 0.9, 0.1, 1) forwards;
+        }
+
+        .lm-ambient-backdrop {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        [data-theme="light"] .lm-ambient-backdrop {
+            display: none;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .word-reveal-inner, .lm-neon-dot {
+                animation: none !important;
+            }
+            .lm-ambient-backdrop video {
+                display: none;
+            }
+        }
+
+        .tabular-nums {
+            font-variant-numeric: tabular-nums;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        ::-webkit-scrollbar {
+            width: 7px;
+            height: 7px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-canvas);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(140, 140, 150, 0.35);
+            border-radius: 999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-primary);
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

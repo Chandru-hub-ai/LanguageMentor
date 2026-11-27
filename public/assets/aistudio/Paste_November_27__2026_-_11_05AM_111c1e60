@@ -1,0 +1,1249 @@
+# LANGUAGE MENTOR 2.0 — PHASE B
+# ADAPTIVE ASSESSMENT, CONCEPT MASTERY & LEARNING GAP DETECTION ENGINE
+
+Act as a senior AI engineer, educational assessment architect, database engineer, adaptive learning specialist and full-stack developer.
+
+I already have a working Language Mentor 1.0 application and I am progressively upgrading it into Language Mentor 2.0.
+
+Phase A is focused on upgrading the AI Tutor, cultural intelligence, multilingual teaching, contextual explanations and AI response performance.
+
+NOW IMPLEMENT PHASE B.
+
+PHASE B OBJECTIVE:
+
+Build a complete functional Adaptive Assessment, Concept Mastery, Misconception Detection, Learning Gap Detection and Adaptive Decision Engine.
+
+The application must move beyond simply answering students' questions.
+
+It must genuinely evaluate student understanding using actual assessment data, identify knowledge gaps and make intelligent learning decisions.
+
+IMPORTANT — UI PRESERVATION:
+
+I DO NOT WANT A UI REDESIGN.
+
+DO NOT CHANGE:
+
+- Homepage.
+- Sidebar.
+- Navigation.
+- Logo.
+- Colors.
+- Typography.
+- Layout.
+- Existing cards.
+- Existing buttons.
+- Existing animations.
+- Existing responsive design.
+- Existing visual components.
+
+DO NOT rebuild the application.
+
+DO NOT create a new frontend.
+
+DO NOT remove existing features.
+
+Use the existing interface and integrate the new functionality into the existing components and pages.
+
+If new functionality requires interaction, integrate it using the existing UI patterns and components.
+
+This is a functionality and intelligence upgrade.
+
+==================================================
+PHASE 1 — INSPECT THE EXISTING APPLICATION
+==================================================
+
+Before implementing anything, inspect the entire existing project.
+
+Identify:
+
+- Existing AI Tutor.
+- Existing assessment functionality.
+- Existing quiz components.
+- Existing database.
+- Existing authentication.
+- Existing Gemini integration.
+- Existing user profiles.
+- Existing learning preferences.
+- Existing concept structures.
+- Existing chat history.
+- Existing dashboard metrics.
+- Existing frontend architecture.
+- Existing state management.
+- Existing backend functions.
+- Existing API endpoints.
+- Existing database security policies.
+
+Determine whether Phase A features are already implemented.
+
+Reuse existing functionality.
+
+Do not duplicate existing tables, services, functions or components.
+
+Identify what is missing for Phase B.
+
+Create a concise implementation plan based on the existing code.
+
+Then implement Phase B incrementally.
+
+==================================================
+PHASE 2 — ADAPTIVE ASSESSMENT ENGINE
+==================================================
+
+Build a complete assessment generation and evaluation system.
+
+The assessment engine must evaluate understanding, not merely generate random quiz questions.
+
+It must support the following assessment types:
+
+1. Diagnostic assessment.
+2. Beginner assessment.
+3. Adaptive practice.
+4. Concept mastery assessment.
+5. Application-based assessment.
+6. Scenario-based assessment.
+7. Retention assessment.
+8. Exam preparation assessment.
+9. Code-related assessment where relevant.
+
+The system should allow the existing application to generate assessments based on the student's current concept.
+
+Assessment generation should consider:
+
+- Concept.
+- Subject.
+- Difficulty.
+- Student proficiency.
+- Learning history.
+- Previously answered questions.
+- Current mastery level, if available.
+- Learning objectives.
+- Question type.
+- Preferred language.
+
+Do not generate assessments unrelated to the selected concept.
+
+==================================================
+PHASE 3 — QUESTION GENERATION INTELLIGENCE
+==================================================
+
+Generate logically valid and educationally meaningful questions.
+
+Supported question formats:
+
+A. Multiple choice.
+
+B. True or false.
+
+C. Short answer.
+
+D. Scenario-based question.
+
+E. Conceptual question.
+
+F. Application-based question.
+
+G. Code-based question where appropriate.
+
+H. Debugging or logic question where appropriate.
+
+Each question should internally contain:
+
+- Question ID.
+- Concept ID.
+- Subject.
+- Question text.
+- Question type.
+- Difficulty level.
+- Learning objective.
+- Options if applicable.
+- Correct answer.
+- Answer explanation.
+- Common misconception associated with incorrect options where relevant.
+- Evaluation criteria for short-answer questions.
+- Metadata necessary for secure evaluation.
+
+Do not expose the correct answer or scoring metadata to the client before submission.
+
+Avoid duplicate questions within an assessment.
+
+Avoid unnecessarily repeating previously asked questions when question history is available.
+
+Do not generate ambiguous questions.
+
+Ensure that incorrect options are plausible but clearly incorrect.
+
+Ensure that the correct answer is genuinely correct.
+
+==================================================
+PHASE 4 — DIAGNOSTIC ASSESSMENT
+==================================================
+
+Create a diagnostic assessment system.
+
+Its purpose is to determine the student's initial understanding of a concept or subject.
+
+A diagnostic assessment should:
+
+1. Identify the selected subject.
+2. Identify the target concept.
+3. Assess prerequisite knowledge where relevant.
+4. Evaluate conceptual understanding.
+5. Identify common misconceptions.
+6. Determine the student's current performance level.
+7. Identify knowledge gaps.
+8. Recommend the appropriate teaching approach.
+
+The diagnostic assessment should not assume that the student is a beginner.
+
+Use actual answers to determine the initial assessment outcome.
+
+Possible diagnostic outcomes:
+
+- Foundation level.
+- Developing level.
+- Intermediate level.
+- Advanced understanding.
+
+These levels must be derived from assessment results and valid assessment rules.
+
+Do not assign levels based solely on the user's profile or a single answer.
+
+If the assessment data is insufficient, label the level provisional.
+
+==================================================
+PHASE 5 — ADAPTIVE QUIZ ENGINE
+==================================================
+
+Implement adaptive question difficulty.
+
+The system should adapt question difficulty based on actual student performance.
+
+Initial difficulty levels:
+
+LEVEL 1 — FOUNDATION.
+
+Simple understanding and terminology.
+
+LEVEL 2 — BEGINNER APPLICATION.
+
+Basic application of the concept.
+
+LEVEL 3 — INTERMEDIATE.
+
+Conceptual understanding and moderate application.
+
+LEVEL 4 — ADVANCED.
+
+Complex applications and analytical questions.
+
+LEVEL 5 — CHALLENGE.
+
+Advanced scenarios, synthesis and complex problem-solving.
+
+Adaptive rules should be configurable.
+
+Suggested initial rules:
+
+- Repeated incorrect answers on foundational questions should reduce difficulty or trigger a teaching intervention.
+- Consistent correct answers across multiple questions should gradually increase difficulty.
+- Correct answers on advanced questions should contribute more to evidence of higher-level understanding than easy questions.
+- Incorrect answers should be analyzed to identify the specific misconception when possible.
+- The system must not jump to advanced difficulty after a single correct answer.
+- The system should not repeatedly lower difficulty due to one isolated mistake.
+- The system should consider the number of attempts and assessment confidence.
+
+Implement a deterministic adaptive decision engine.
+
+Use assessment evidence rather than asking Gemini to arbitrarily assign difficulty.
+
+Gemini can generate questions and interpret structured feedback, but the application logic must determine the adaptive decisions.
+
+==================================================
+PHASE 6 — SECURE ANSWER EVALUATION
+==================================================
+
+Implement secure answer evaluation.
+
+The frontend must never determine whether an answer is correct.
+
+The frontend must never submit a trusted correctness value.
+
+The frontend must never directly update mastery scores.
+
+The frontend must never access the answer key before submission.
+
+Answer evaluation must happen on the trusted server side.
+
+For multiple-choice questions:
+
+- Compare the submitted answer with the stored answer key.
+- Validate the question.
+- Validate the user's ownership or attempt permissions.
+- Calculate the result server-side.
+
+For true/false questions:
+
+- Validate the submitted answer.
+- Evaluate using the stored answer key.
+
+For short-answer questions:
+
+- Use a server-side evaluation strategy.
+- Where appropriate, use Gemini to evaluate the answer against a stored reference answer and rubric.
+- Use structured evaluation output.
+- Do not blindly accept Gemini's output.
+- Validate the response schema.
+- Validate score bounds.
+- Validate that the response contains an assessment rationale.
+- Use appropriate confidence thresholds.
+- Handle uncertain evaluations.
+- Avoid claiming exact equivalence when answers may vary.
+
+For coding questions:
+
+- Use a suitable evaluation approach if one exists in the current architecture.
+- Do not execute unsafe code in the main application server.
+- If a secure execution environment is not available, use rubric-based evaluation or safe static assessment instead.
+- Do not claim that code was executed if it was not.
+
+==================================================
+PHASE 7 — SHORT-ANSWER EVALUATION RUBRIC
+==================================================
+
+Implement a structured rubric-based evaluation system for short answers.
+
+The evaluation should consider:
+
+- Conceptual correctness.
+- Essential key points.
+- Logical explanation.
+- Technical accuracy.
+- Relevant examples where required.
+
+Use a structured response format internally.
+
+Example evaluation structure:
+
+{
+  "is_correct": true,
+  "score": 85,
+  "confidence": 0.92,
+  "feedback": "Your explanation correctly describes...",
+  "missing_concepts": [],
+  "misconceptions": [],
+  "key_points_present": [],
+  "key_points_missing": [],
+  "evaluation_status": "evaluated"
+}
+
+This is an illustrative schema.
+
+Implement a validated response schema using the existing technology stack.
+
+Do not blindly trust generated JSON.
+
+If the AI response is malformed or uncertain, handle the evaluation safely.
+
+Do not force a binary correct/incorrect result when a partial score is more appropriate.
+
+Support partial credit.
+
+==================================================
+PHASE 8 — ASSESSMENT ATTEMPTS
+==================================================
+
+Create proper assessment attempt management.
+
+Inspect the existing database before creating tables.
+
+If a suitable attempt system already exists, upgrade it.
+
+Otherwise, create the necessary schema.
+
+An assessment attempt should support:
+
+- Attempt ID.
+- User ID.
+- Subject ID where applicable.
+- Concept ID.
+- Assessment type.
+- Difficulty.
+- Start time.
+- Completion time.
+- Total questions.
+- Correct answers.
+- Incorrect answers.
+- Partial-credit results.
+- Score.
+- Attempt status.
+- Evaluation summary.
+
+Possible attempt statuses:
+
+- Created.
+- In progress.
+- Completed.
+- Abandoned.
+
+Do not mark an attempt completed before it is actually completed.
+
+Prevent accidental duplicate submissions.
+
+Use server-side validation.
+
+==================================================
+PHASE 9 — STUDENT ANSWER RECORDS
+==================================================
+
+Store actual answer records.
+
+Each answer record should contain:
+
+- Student ID.
+- Assessment attempt ID.
+- Question ID.
+- Submitted answer.
+- Evaluation result.
+- Score where applicable.
+- Time taken where reliable.
+- Attempt number.
+- Concept.
+- Difficulty.
+- Submission timestamp.
+- Feedback.
+- Misconception identifiers if identified.
+
+Ensure that records cannot be modified to manipulate mastery scores.
+
+Use appropriate database access controls.
+
+Do not expose sensitive evaluation data unnecessarily.
+
+==================================================
+PHASE 10 — CONCEPT MASTERY ENGINE
+==================================================
+
+Implement a deterministic concept mastery engine.
+
+The goal is to estimate the student's actual understanding of individual concepts.
+
+Suggested mastery calculation:
+
+Quiz Accuracy: 50%.
+
+Practical Performance: 30%.
+
+Retention Performance: 20%.
+
+Formula:
+
+Mastery Score =
+
+(Quiz Accuracy × 0.50) +
+
+(Practical Performance × 0.30) +
+
+(Retention Performance × 0.20)
+
+All inputs should be normalized to 0–100.
+
+If some measurement categories do not yet exist:
+
+- Do not treat missing data as zero.
+- Renormalize the weights over the available categories.
+- Clearly distinguish provisional mastery from sufficiently supported mastery.
+
+Example:
+
+If only quiz accuracy is available, do not pretend practical performance and retention have been assessed.
+
+The system should calculate a provisional mastery score based on available evidence.
+
+As new evidence becomes available, update the score using the appropriate calculation.
+
+Do not let the frontend directly calculate or update mastery.
+
+The calculation must be performed by trusted backend logic.
+
+==================================================
+PHASE 11 — MASTERY EVIDENCE AND CONFIDENCE
+==================================================
+
+Mastery should not rely only on a single assessment.
+
+Track mastery evidence.
+
+Consider:
+
+- Number of attempts.
+- Accuracy.
+- Difficulty.
+- Repeated performance.
+- Practical performance.
+- Retention.
+- Recent performance.
+- Previous mistakes.
+- Assessment quality.
+- Data availability.
+
+Introduce a mastery confidence or evidence indicator.
+
+Possible confidence states:
+
+- Insufficient evidence.
+- Low confidence.
+- Moderate confidence.
+- High confidence.
+
+These confidence states should be calculated using actual evidence and configurable rules.
+
+Do not confuse confidence in mastery with the mastery score itself.
+
+A student may have a high score but insufficient assessment evidence.
+
+For example:
+
+A student scoring 95% on one simple quiz may not have sufficient evidence of mastery.
+
+==================================================
+PHASE 12 — MASTERY CLASSIFICATION
+==================================================
+
+Create configurable mastery bands.
+
+Initial bands:
+
+0–39:
+
+FOUNDATION REQUIRED.
+
+Recommendation:
+
+Re-teach the concept with simpler explanations, contextual examples and foundational practice.
+
+40–59:
+
+DEVELOPING.
+
+Recommendation:
+
+Provide guided examples, beginner exercises and targeted explanation.
+
+60–79:
+
+FUNCTIONAL UNDERSTANDING.
+
+Recommendation:
+
+Provide application questions, moderate practice and problem-solving.
+
+80–100:
+
+STRONG UNDERSTANDING.
+
+Recommendation:
+
+Advance, apply the concept in complex scenarios or schedule retention revision.
+
+These thresholds must be configurable.
+
+Do not use a single mastery band as the only decision factor.
+
+Also consider:
+
+- Evidence confidence.
+- Prerequisite mastery.
+- Assessment difficulty.
+- Repeated errors.
+- Retention.
+
+==================================================
+PHASE 13 — MISCONCEPTION DETECTION
+==================================================
+
+Implement misconception detection.
+
+When a student answers incorrectly, identify the potential reason.
+
+Possible misconception categories:
+
+- Conceptual misunderstanding.
+- Terminology confusion.
+- Incorrect reasoning.
+- Procedural error.
+- Calculation mistake.
+- Syntax mistake.
+- Misinterpretation.
+- Missing prerequisite knowledge.
+
+Use structured misconception data where appropriate.
+
+Each misconception record may include:
+
+- Concept.
+- Misconception category.
+- Description.
+- Evidence from answer.
+- Confidence.
+- Recommended intervention.
+
+Do not permanently label the student based on one answer.
+
+Misconceptions should be treated as observations.
+
+Track repeated misconceptions only when multiple actual records support the pattern.
+
+==================================================
+PHASE 14 — LEARNING GAP DETECTION
+==================================================
+
+Implement a learning gap detection engine.
+
+The engine must identify genuine learning gaps from assessment data.
+
+Detect:
+
+- Low concept mastery.
+- Repeated incorrect answers.
+- Repeated misconceptions.
+- Missing prerequisites.
+- Weak foundational concepts.
+- Concepts with inconsistent performance.
+- Concepts needing retention revision.
+- Concepts where performance declines.
+
+Each learning gap should contain:
+
+- Concept ID.
+- Concept name.
+- Gap type.
+- Evidence.
+- Confidence.
+- Priority.
+- Recommended intervention.
+- Recommended learning mode.
+- Suggested next activity.
+
+Use actual data.
+
+Do not fabricate gaps.
+
+Do not label an unassessed concept as weak.
+
+Use the status:
+
+NOT ASSESSED
+
+when no meaningful evidence exists.
+
+==================================================
+PHASE 15 — PREREQUISITE ANALYSIS
+==================================================
+
+Inspect the existing concept structure.
+
+If prerequisite relationships exist, reuse them.
+
+If they do not exist, create a compatible prerequisite structure where necessary.
+
+Do not destructively alter existing concept data.
+
+Support prerequisite relationships between concepts.
+
+For example:
+
+Programming Fundamentals.
+
+↓
+
+Variables.
+
+↓
+
+Conditions.
+
+↓
+
+Loops.
+
+↓
+
+Arrays.
+
+↓
+
+Searching.
+
+↓
+
+Sorting.
+
+The example is illustrative.
+
+Use actual subject and concept data in the application.
+
+When a student struggles with a concept, check whether prerequisite concepts have been assessed.
+
+If prerequisites are missing or weak:
+
+- Recommend foundational learning.
+- Explain why the prerequisite matters.
+- Avoid automatically assuming the student has mastered it.
+
+Do not endlessly block the student.
+
+Allow appropriate progression when the student chooses to continue.
+
+==================================================
+PHASE 16 — ADAPTIVE LEARNING DECISION ENGINE
+==================================================
+
+Create a deterministic adaptive decision engine.
+
+The engine should combine:
+
+- Mastery score.
+- Mastery confidence.
+- Assessment history.
+- Question difficulty.
+- Repeated errors.
+- Misconceptions.
+- Prerequisite mastery.
+- Retention evidence.
+- Learning preferences.
+
+Possible next actions:
+
+1. RE-TEACH.
+
+Provide a simpler explanation.
+
+2. ANALOGY.
+
+Explain through a relatable contextual example.
+
+3. GUIDED PRACTICE.
+
+Provide step-by-step exercises.
+
+4. FOUNDATIONAL PRACTICE.
+
+Reinforce prerequisites.
+
+5. APPLICATION.
+
+Provide real-world application problems.
+
+6. ADVANCED PRACTICE.
+
+Increase difficulty.
+
+7. RETENTION REVISION.
+
+Schedule a revision check.
+
+8. ADVANCE.
+
+Recommend the next concept.
+
+The decision engine must use deterministic rules.
+
+Gemini may generate the actual educational content for the recommended action.
+
+Gemini must not independently override the decision engine.
+
+==================================================
+PHASE 17 — ADAPTIVE FEEDBACK
+==================================================
+
+After each submitted answer, provide educational feedback.
+
+The feedback should contain:
+
+- Whether the answer was correct, partially correct or incorrect.
+- Explanation.
+- Why the answer is correct.
+- Why the answer is incorrect where appropriate.
+- The relevant concept.
+- Missing knowledge where applicable.
+- A useful learning recommendation.
+
+Feedback should be encouraging but not artificially positive.
+
+Avoid generic feedback such as:
+
+"Great job!"
+
+when the answer is incorrect or incomplete.
+
+Provide meaningful explanations.
+
+==================================================
+PHASE 18 — POST-ASSESSMENT SUMMARY
+==================================================
+
+After an assessment is completed, generate an assessment summary based on actual records.
+
+The summary should include:
+
+- Assessment score.
+- Number of questions.
+- Correct answers.
+- Incorrect answers.
+- Partial-credit results where applicable.
+- Concepts assessed.
+- Performance by concept.
+- Misconceptions identified.
+- Learning gaps.
+- Mastery updates.
+- Recommended next action.
+
+If data is insufficient, clearly indicate it.
+
+Do not invent statistics.
+
+==================================================
+PHASE 19 — ADAPTIVE NEXT ACTIVITY
+==================================================
+
+After assessment completion, determine the student's next learning activity.
+
+The decision should be based on:
+
+- Actual assessment results.
+- Concept mastery.
+- Evidence confidence.
+- Misconceptions.
+- Prerequisites.
+- Learning goals.
+
+Examples:
+
+If the student has low mastery:
+
+Recommend re-teaching.
+
+If the student has moderate mastery:
+
+Recommend guided practice.
+
+If the student has strong mastery with sufficient evidence:
+
+Recommend an advanced concept.
+
+If retention evidence is missing:
+
+Recommend a retention assessment when appropriate.
+
+Do not automatically start the next activity without user consent unless the existing learning flow explicitly supports automatic progression.
+
+==================================================
+PHASE 20 — DATABASE ARCHITECTURE
+==================================================
+
+Inspect the current database.
+
+Do not duplicate existing tables.
+
+Do not reset the database.
+
+Do not delete existing data.
+
+Implement incremental database migrations only where necessary.
+
+Consider the following data structures if not already present:
+
+1. assessment_attempts.
+
+2. assessment_questions.
+
+3. student_answers.
+
+4. concept_mastery.
+
+5. misconception_records.
+
+6. prerequisite relationships.
+
+7. assessment_evaluation_records where appropriate.
+
+8. mastery_observations where appropriate.
+
+Use the existing database technology.
+
+If Supabase is used, implement appropriate:
+
+- Row-level security.
+- Server-side functions.
+- Ownership validation.
+- Database constraints.
+- Indexes.
+- Secure answer storage.
+- Server-side mastery calculation.
+
+Do not expose answer keys.
+
+Do not expose service-role keys.
+
+Do not allow direct client-side mastery manipulation.
+
+Do not allow students to access other students' assessment records.
+
+==================================================
+PHASE 21 — API AND BACKEND FUNCTIONALITY
+==================================================
+
+Inspect the existing backend architecture.
+
+Reuse existing backend functions.
+
+Implement the necessary functionality without duplicating endpoints unnecessarily.
+
+Possible functions:
+
+GENERATE ASSESSMENT.
+
+Input:
+
+- Concept ID.
+- Assessment type.
+- Difficulty.
+- Question count.
+- Language.
+- Learning objective.
+
+Output:
+
+- Assessment ID.
+- Attempt ID.
+- Public question data.
+- Question options where applicable.
+- Difficulty.
+- Question type.
+
+Never return answer keys.
+
+SUBMIT ANSWER.
+
+Input:
+
+- Attempt ID.
+- Question ID.
+- Submitted answer.
+- Time taken where reliable.
+
+Backend:
+
+- Validate user.
+- Validate attempt.
+- Validate question.
+- Validate ownership.
+- Evaluate answer.
+- Store answer.
+- Detect misconceptions where appropriate.
+- Update assessment state.
+- Calculate relevant mastery observations.
+
+Output:
+
+- Evaluation.
+- Feedback.
+- Partial score where appropriate.
+- Relevant misconception information.
+- Updated attempt information.
+
+COMPLETE ASSESSMENT.
+
+Backend:
+
+- Verify attempt.
+- Verify submitted answers.
+- Calculate score.
+- Calculate mastery.
+- Update concept mastery.
+- Update learning gap records.
+- Generate adaptive decision.
+- Generate assessment summary.
+
+ADAPT LEARNING.
+
+Input:
+
+- Concept ID.
+
+Backend:
+
+- Read actual mastery.
+- Read assessment history.
+- Read relevant prerequisite data.
+- Read misconceptions.
+- Determine next action using deterministic logic.
+
+Output:
+
+- Mastery score.
+- Evidence confidence.
+- Learning status.
+- Recommended next action.
+- Reason.
+- Relevant learning gap.
+
+Implement the necessary functionality using the existing API and backend architecture.
+
+Do not create duplicate APIs unnecessarily.
+
+==================================================
+PHASE 22 — SECURITY
+==================================================
+
+Security is mandatory.
+
+- Never expose answer keys.
+- Never expose sensitive evaluation metadata.
+- Never allow the client to submit trusted correctness values.
+- Never allow the client to directly update mastery scores.
+- Never allow the client to directly create trusted misconception records.
+- Validate user ownership.
+- Validate assessment attempts.
+- Validate question IDs.
+- Validate submissions.
+- Protect API keys.
+- Protect service credentials.
+- Use server-side evaluation.
+- Validate Gemini responses.
+- Apply database access controls.
+- Prevent cross-user access.
+
+If Supabase is used, use trusted Edge Functions for sensitive operations.
+
+Never expose the Supabase service-role key in frontend code.
+
+==================================================
+PHASE 23 — PERFORMANCE AND RELIABILITY
+==================================================
+
+Optimize the assessment system.
+
+Prevent:
+
+- Duplicate quiz generation.
+- Duplicate answer submission.
+- Duplicate mastery updates.
+- Unnecessary AI calls.
+- Infinite retry loops.
+- Excessive question generation.
+- Unnecessary database queries.
+
+Implement:
+
+- Request validation.
+- Request deduplication where appropriate.
+- Submission idempotency where appropriate.
+- Proper loading state integration with existing UI.
+- Retry handling.
+- Rate-limit handling.
+- Timeout handling.
+- Error recovery.
+
+Do not generate a new quiz every time a component renders.
+
+Do not calculate mastery repeatedly using duplicate observations.
+
+==================================================
+PHASE 24 — UI INTEGRATION WITHOUT REDESIGN
+==================================================
+
+Integrate Phase B into the existing UI.
+
+Do not redesign the interface.
+
+Use the existing:
+
+- Assessment interface.
+- Quiz components.
+- Buttons.
+- Cards.
+- Progress indicators.
+- Dashboard.
+- Learning analytics.
+- Tutor.
+- Navigation.
+
+If an existing assessment page is available, connect the new assessment engine to it.
+
+If existing UI components are missing a necessary interaction, add the smallest functional modification possible using the existing design system.
+
+Do not create an entirely new design.
+
+Do not replace existing pages.
+
+Do not alter colors or layouts.
+
+==================================================
+PHASE 25 — TESTING
+==================================================
+
+Test the actual implementation where possible.
+
+Test:
+
+1. Assessment generation.
+2. Question validation.
+3. Question difficulty.
+4. Duplicate question prevention.
+5. Assessment attempts.
+6. Answer submission.
+7. Correct answer evaluation.
+8. Incorrect answer evaluation.
+9. Partial-credit evaluation.
+10. Short-answer evaluation.
+11. Secure answer storage.
+12. Answer key protection.
+13. Duplicate answer submission.
+14. Assessment completion.
+15. Mastery calculation.
+16. Missing mastery data.
+17. Mastery confidence.
+18. Misconception detection.
+19. Learning gap detection.
+20. Prerequisite analysis.
+21. Adaptive learning decisions.
+22. Post-assessment summary.
+23. Adaptive next activity.
+24. Database persistence.
+25. Ownership security.
+26. Rate-limit handling.
+27. Error handling.
+28. Existing UI preservation.
+
+Do not claim a test passed if it was not actually performed.
+
+==================================================
+PHASE 26 — IMPLEMENTATION STRATEGY
+==================================================
+
+Implement Phase B incrementally.
+
+STEP 1:
+
+Inspect the existing application.
+
+STEP 2:
+
+Identify existing assessment functionality.
+
+STEP 3:
+
+Identify database requirements.
+
+STEP 4:
+
+Create a concise implementation plan.
+
+STEP 5:
+
+Implement assessment generation.
+
+STEP 6:
+
+Implement secure answer evaluation.
+
+STEP 7:
+
+Implement assessment attempts.
+
+STEP 8:
+
+Implement mastery calculations.
+
+STEP 9:
+
+Implement misconception detection.
+
+STEP 10:
+
+Implement learning gap detection.
+
+STEP 11:
+
+Implement adaptive learning decisions.
+
+STEP 12:
+
+Integrate with the existing UI.
+
+STEP 13:
+
+Test and verify.
+
+Do not blindly rewrite the entire application.
+
+Do not modify unrelated files.
+
+Do not destroy existing data.
+
+Do not rebuild the frontend.
+
+Do not change the visual interface.
+
+==================================================
+PHASE 27 — FINAL REPORT
+==================================================
+
+After implementation, provide a concise report containing:
+
+1. Features implemented.
+2. Files modified.
+3. Database migrations created.
+4. Backend functions created or modified.
+5. Assessment functionality.
+6. Mastery calculation logic.
+7. Misconception detection.
+8. Learning gap detection.
+9. Adaptive decision logic.
+10. Security measures.
+11. Testing performed.
+12. Testing not performed.
+13. Any remaining issues.
+
+FINAL GOAL:
+
+Implement a functional Adaptive Assessment and Learning Intelligence Engine for Language Mentor 2.0.
+
+The application must be capable of:
+
+ASSESSING actual student understanding.
+
+GENERATING meaningful questions.
+
+EVALUATING answers securely.
+
+CALCULATING concept mastery using real evidence.
+
+DETECTING misconceptions.
+
+IDENTIFYING learning gaps.
+
+UNDERSTANDING prerequisite weaknesses.
+
+ADAPTING question difficulty.
+
+RECOMMENDING the next learning activity.
+
+PROVIDING meaningful educational feedback.
+
+TRACKING genuine assessment progress.
+
+The adaptive learning system must use actual student data and deterministic decision rules.
+
+Gemini should provide educational intelligence, question generation and structured interpretation.
+
+The backend must control assessment validation, answer evaluation, mastery calculations and adaptive decisions.
+
+Preserve the entire existing UI and functionality.
+
+Implement Phase B directly in my existing Language Mentor application.
+
+Inspect first, implement incrementally, integrate with the existing UI and verify the actual changes.
+
+DO NOT REDESIGN MY UI.
